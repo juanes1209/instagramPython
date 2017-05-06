@@ -1,0 +1,24 @@
+#formulario{
+color: #ff5c33;
+border-style: solid;
+width: 50%
+text-aligh:center;
+float: right;
+}
+
+#Imagenes{
+  color: #ff6600;
+border-style: solid;
+width: 50%
+}
+
+#Img1{
+  height:80px;
+  width:auto;
+  border-radius:80px
+}
+#Img2{
+  height:80px;
+  width:auto;
+  border-radius:80px
+}

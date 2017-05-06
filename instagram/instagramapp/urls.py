@@ -1,5 +1,8 @@
 from django.conf.urls import url
 
-urlpatterns =[
-    url(r'^registrar/',views.registrar),
+from . import views
+
+urlpatterns = [
+   url (r'^$', views.registro, name = 'registro'),
+   url (r'^tienes_cuenta/$',views.tienes_cuenta, name='tienes_cuenta' )
 ]
