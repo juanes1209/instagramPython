@@ -13,23 +13,27 @@
 
   <div class="card" style="width: 20rem;">
   <div class="card-block">
-    <form>
+    <form action="{% url 'crear_usuario' %}" method="POST">
+      {% csrf_token %}
      <div class="form-group" id="formulario">
        Bienvenido a instagram<br>
        <div class="form-group">
-       <input type="text"placeholder="Correo">
+       <input type="text" placeholder="Correo" name="email">
      </div>
       <div class="form-group">
-       <input type="text"placeholder="Nombre">
+       <input type="text"placeholder="Nombre" name="name">
       </div>
       <div class="form-group>"
-       <input type="text"placeholder="Usuario">
+       <input type="text"placeholder="Usuario" name="username">
       </div>
       <div>
-       <input type="password"placeholder="Contraseña"><br>
+       <input type="password"placeholder="Contraseña"name="password"><br>
      </div>
+     <div class="form-group">
+    <input type="password"placeholder="Confirmar Contraseña"><br>
+    </div>
    </div>
-      <button type="button" class="btn btn-warning">Registrate</button>
+      <button class="btn btn-warning">Registrate</button>
     </form>
      ¿Tienes cuenta?
       <a href="{% url 'tienes_cuenta' %}"class="card-link">Entrar</a><br>
