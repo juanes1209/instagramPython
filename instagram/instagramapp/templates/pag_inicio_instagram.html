@@ -16,17 +16,13 @@
  </head>
  <body>
   <center>
-  <i class="material-icons">home</i>
-  <button type="button" class="btn btn-Info"><i class="material-icons">favorite</i></button></a>
+  <button type="button" class="btn btn-Info"><i class="material-icons">home</i></button></a>
   <button type="button" class="btn btn-Info"><i class="material-icons">search</i></button></a>
-  <button type="button" class="btn btn-Info"><i class="material-icons">camera_enhance</i></button></a>
-  <a href="inicio_instagram"><button type="button" class="btn btn-Info"><i class="material-icons">person</i></button></a>
-
-
-
-
-
+  <button type="button" class="btn btn-Info"><i class="material-icons">photo_camera</i></button></a>
+  <button type="button" class="btn btn-Info"><i class="material-icons">favorite</i></button></a>
+  <a href="{% url 'perfil' %}" class="btn btn-Info"><i class="material-icons">person</i></button></a>
 
   </center>
+  <a href="{% url 'logout' %}"><i class="material-icons">exit_to_app</i></a>
  </body>
 </html>

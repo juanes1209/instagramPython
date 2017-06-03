@@ -1,22 +1,34 @@
+{% load static %}
+<!DOCTYPE html>
 <html>
-<head>
-<meta charset="UTF-8">
-<title>registro</title>
+   <head>
+       <meta charset="UTF-8">
+       <title>registro</title>
+       <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
+       <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script>
+       <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
+       <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
 
-</head>
-<body>
-  <center>
-<div class="card-block">
-inicio de seccion<br>
-<div class="card" style="width: 20rem;">
-<div class="form group">
- <input type="text" class="form-control" id="" name="username" placeholder="Nombre de usuario">
+   </head>
+   <body>
+       <center>
+           <div class="card-block">
+             inicio de seccion<br>
+            <div class="card" style="width: 20rem;">
+            <div class="form group">
+              <form action='{% url 'login' %}' method='post'>
+                {% csrf_token %}
+ <input type="text" class="form-control" id="" name="username" placeholder="Nombre de usuario"><br>
 </div>
 <div>
- <input type="text" class="form-control" id="" name="password" placeholder="Contraseña">
+ <input type="text" class="form-control" id="" name="password" placeholder="Contraseña"><br>
 </div>
-<a href="pag_inicio_instagram.html"><button type="button" class="btn btn-warning">ENTRAR</button></a>
+<button class="btn btn-warning">ENTRAR</button>
+</form>
 </div>
+</div>
+<div> ¿No Tienes Cuenta?
+  <a href="{% url 'registro' %}" >Entrar</a><br>
 </div>
 </center>
 </body>

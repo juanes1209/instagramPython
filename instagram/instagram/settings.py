@@ -120,6 +120,6 @@ USE_TZ = True
 
 STATIC_URL = '/static/'
 
-LOGIN_URL =( 'registro_del_instagram.html' )
+LOGIN_URL =( 'tienes_cuenta' )
 LOGIN_REDIRECT_URL =('pag_inicio_instagram')
-LOGOUT_REDIRECT_URL =('registro_del_instagram.html')
+LOGOUT_REDIRECT_URL =('tienes_cuenta')
