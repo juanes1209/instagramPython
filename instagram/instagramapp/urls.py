@@ -10,7 +10,7 @@ urlpatterns = [
    url (r'^login/$', auth_views.LoginView.as_view(template_name='tienes_cuenta.html',redirect_authenticated_user=True),name='login' ),
    url (r'^logout/$', auth_views.LogoutView.as_view(template_name='pag_inicio_instagram.html'),name= 'logout' ),
    url (r'^perfil/$',views.perfil, name='perfil' ),
-
+   url (r'^uploadphoto/$',viwes.uploadphoto, name='uploadphoto' )
 
 
 

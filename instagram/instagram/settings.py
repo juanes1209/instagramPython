@@ -120,6 +120,10 @@ USE_TZ = True
 
 STATIC_URL = '/static/'
 
+#Archivo multimedia.
+MEDIA_ROOT = os.path.join(BASE_DIR, 'instagramapp/static/media')
+MEDIA_URL = '/media/'
+
 LOGIN_URL =( 'tienes_cuenta' )
 LOGIN_REDIRECT_URL =('pag_inicio_instagram')
 LOGOUT_REDIRECT_URL =('tienes_cuenta')
